@@ -4,14 +4,9 @@ import 'package:get/get.dart';
 import '../components/key_button.dart';
 import '../controller/key_service_controller.dart';
 
-class AccountCreation extends StatefulWidget {
+class AccountCreation extends StatelessWidget {
   const AccountCreation({super.key});
 
-  @override
-  State<AccountCreation> createState() => _AccountCreationState();
-}
-
-class _AccountCreationState extends State<AccountCreation> {
   @override
   Widget build(BuildContext context) {
     final LanguageButtonsController languageButtonsController =

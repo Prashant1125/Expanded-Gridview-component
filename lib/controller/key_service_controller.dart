@@ -3,6 +3,13 @@
 import 'package:get/get.dart';
 
 class LanguageButtonsController extends GetxController {
+  RxBool isSheAll = false.obs;
+
+  // Function to change the value
+  void changeTapState() {
+    isSheAll.value = !isSheAll.value;
+  }
+
   RxMap<String, bool> buttonsStates = <String, bool>{
     'Fat Loss': false,
     'Endurance Improvement': false,
